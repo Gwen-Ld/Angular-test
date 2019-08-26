@@ -6,6 +6,7 @@ import { SidenavComponent } from './sidenav.component';
   declarations: [SidenavComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[SidenavComponent]
 })
 export class SidenavModule { }
