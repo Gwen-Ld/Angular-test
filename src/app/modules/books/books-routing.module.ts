@@ -5,7 +5,13 @@ import { BooksComponent } from './books.component';
 const routes: Routes = [
   {
     path: '',
-    component: BooksComponent
+    component: BooksComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: './book-detail/book-detail.module#BookDetailModule'
+      }
+    ]
   },
 ];
 
