@@ -1,5 +1,14 @@
 <mat-sidenav-container>
-  <mat-sidenav opened="true" mode="side">drawer</mat-sidenav>
+  <mat-sidenav opened="true" mode="side">
+    <mat-nav-list>
+      <mat-list-item>
+        <h4 matLine routerLink="/" routerLinkActive="active-Link">Home</h4>
+      </mat-list-item>
+      <mat-list-item>
+        <h4 matLine routerLink="/books" routerLinkActive="active-Link">Books</h4>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar>
       <button
