@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { BooksRoutingModule } from './books-routing.module';
 import { BooksComponent } from './books.component';
+import { MatSidenavModule } from '@angular/material';
 
 @NgModule({
   declarations: [BooksComponent],
   imports: [
     CommonModule,
-    BooksRoutingModule
+    BooksRoutingModule,
+    MatSidenavModule
   ]
 })
 export class BooksModule { }
