@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SidenavComponent } from './sidenav.component';
-import { MatSidenavModule } from '@angular/material';
+import { MatSidenavModule, MatToolbarModule, MatButtonModule, MatIconModule } from '@angular/material';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [SidenavComponent],
   imports: [
     CommonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    RouterModule
   ],
   exports:[SidenavComponent]
 })

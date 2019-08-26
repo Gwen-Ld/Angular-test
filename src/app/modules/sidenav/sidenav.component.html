@@ -1,4 +1,19 @@
 <mat-sidenav-container>
   <mat-sidenav opened="true" mode="side">drawer</mat-sidenav>
-  <mat-sidenav-content>content</mat-sidenav-content>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="snavToggle(snav)"
+      >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span fwFlex>
+      <a class="home-link" routerLink=".">{{ title }}</a>
+    </span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 </mat-sidenav-container>
