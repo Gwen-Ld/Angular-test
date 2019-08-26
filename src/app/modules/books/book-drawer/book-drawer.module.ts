@@ -6,6 +6,7 @@ import { BookDrawerComponent } from './book-drawer.component';
   declarations: [BookDrawerComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports : [BookDrawerComponent]
 })
 export class BookDrawerModule { }
