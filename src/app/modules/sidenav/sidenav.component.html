@@ -1,10 +1,15 @@
 <mat-sidenav-container>
-  <mat-sidenav opened="true" mode="side" #snav>
+  <mat-sidenav opened="false" mode="over" #snav>
     <mat-nav-list>
       <mat-list-item>
         <h4 matLine routerLink="/welcome" 
         [routerLinkActiveOptions]="{extact:true}" 
         routerLinkActive="active-Link">Home</h4>
+      </mat-list-item>
+      <mat-list-item>
+        <h4 matLine routerLink="/kitchensink" 
+        [routerLinkActiveOptions]="{extact:true}" 
+        routerLinkActive="active-Link">Kitchen Sink</h4>
       </mat-list-item>
       <mat-list-item>
         <h4 matLine routerLink="/books" routerLinkActive="active-Link">Books</h4>
@@ -21,7 +26,7 @@
       >
       <mat-icon>menu</mat-icon>
     </button>
-    <span fwFlex>
+    <span fxFlex>
       <a class="home-link" routerLink=".">{{ title }}</a>
     </span>
     </mat-toolbar>
